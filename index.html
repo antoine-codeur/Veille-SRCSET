@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Veille-SRCSET</title>
+</head>
+<body>
+    <header>
+        <h1>Veille sur l'attribut srcset</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Introduction à l'attribut srcset</h2>
+            <p>L'attribut <code>srcset</code> est utilisé dans les balises d'image (<code>&lt;img&gt;</code>) en HTML pour spécifier plusieurs sources d'image différentes en fonction de la résolution de l'écran du périphérique utilisateur.</p>
+        </section>
+
+        <section>
+            <h2>Utilisation de l'attribut srcset</h2>
+            <p>Vous pouvez utiliser l'attribut <code>srcset</code> pour indiquer différentes versions d'une image en fonction des tailles d'écran. Cela contribue à améliorer les performances et l'expérience utilisateur en évitant le téléchargement d'images inutilement grandes sur des écrans plus petits.</p>
+        
+            <div class="image-example">
+                <img 
+                    src="image/cat-photo_x1.png" 
+                    srcset="image/cat-photo_x1.png 300w,
+                            image/cat-photo_x2.png 600w,
+                            image/cat-photo_x3.png 1200w"
+                    sizes="(max-width: 600px) 300px,
+                           (max-width: 1200px) 600px,
+                           1200px"
+                    alt="Exemple d'utilisation de srcset">
+                <p>Exemple d'utilisation de srcset</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Ressources externes</h2>
+            <ul>
+                <li><a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/img#attr-srcset" target="_blank">Documentation Mozilla sur srcset</a></li>
+                <li><a href="https://www.w3schools.com/html/html_images.asp" target="_blank">W3Schools - Images in HTML</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Antoine_DÉNOUE et Rejda_QATI</p>
+    </footer>
+</body>
+</html>
